@@ -1,0 +1,35 @@
+.book-container {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    width: 100%;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    margin: 4px 0;
+}
+
+.book-container span {
+    width:5%;
+    background-color: darkgoldenrod;
+}
+
+.book-container div {
+    display: block;
+    text-align: left;
+    width: 75%;
+    background-color: darkcyan;
+}
+
+.book-container button {
+    width: 20%;
+    padding: 4px 0;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.strike {
+    text-decoration: line-through;
+}

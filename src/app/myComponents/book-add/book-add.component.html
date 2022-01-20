@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()">
+    <label for="bookName">Book Name: </label>
+    <input id="bookName" type="text" name="title" [(ngModel)]="title">
+    <label for="authorName">Author Name: </label>
+    <input id="authorName" type="text" name="name" [(ngModel)]="name">
+    <div>
+        <button class="bookAddButton" type="submit">Add</button>
+    </div>
+</form>

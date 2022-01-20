@@ -1,0 +1,11 @@
+<div class="book-container">
+    <input type="checkbox" id="{{i}}" (click)="onCheck(bookItem)" [checked]="!bookItem.active">
+    <span>
+        <h3 [ngClass]="{'strike': !bookItem.active}">{{i+1}}</h3>
+    </span>
+    <div>
+        <h3 [ngClass]="{'strike': !bookItem.active}">{{bookItem.title}}</h3>
+        <p [ngClass]="{'strike': !bookItem.active}">{{bookItem.author}}</p>
+    </div>
+    <button (click)="onClick(bookItem)">Delete</button>
+</div>

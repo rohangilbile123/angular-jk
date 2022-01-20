@@ -1,0 +1,7 @@
+<app-book-add (addBook)="addBookFunc($event)"></app-book-add>
+<div *ngIf="this.books.length===0; else elseBlock">There are no books in your library</div>
+<ng-template #elseBlock>
+    <div *ngFor="let book of books; index as i">
+        <app-book-list [bookItem]="book" [i]="i" (deleteBook)="deleteBookFunc($event)" (doneBook)="readBook($event)"></app-book-list>
+    </div>
+</ng-template>
